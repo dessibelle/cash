@@ -1,0 +1,6 @@
+[submodule "external/bootstrap"]
+	path = external/bootstrap
+	url = git@github.com:twitter/bootstrap
+[submodule "external/html5-boilerplate"]
+	path = external/html5-boilerplate
+	url = git@github.com:h5bp/html5-boilerplate
