@@ -17,7 +17,7 @@ module.exports = (grunt) ->
                     paths: ["less", "<%= bootstrap %>/less/"],
                     yuicompress: true
                 files:
-                    "build/css/main.min.css" : "less/<%= pkg.name %>.less"
+                    "build/css/main.min.css" : "less/main.less"
 
         uglify:
             options:
@@ -29,6 +29,7 @@ module.exports = (grunt) ->
             main:
                 files: [
                     'build/js/modernizr-2.6.2.min.js': ['<%= h5bp %>/js/vendor/modernizr-2.6.2.min.js'],
+                    'build/js/jquery-1.9.1.min.js': ['<%= h5bp %>/js/vendor/jquery-1.9.1.min.js'],
                     'build/js/main.min.js': [#'<%= bootstrap %>/jquery-1.9.1.js',
                         # '<%= bootstrap %>/js/bootstrap-button.js',
                         # '<%= bootstrap %>/js/bootstrap-collapse.js',
